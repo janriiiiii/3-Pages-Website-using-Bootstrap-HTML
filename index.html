@@ -3,14 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Bootstrap Website</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+  <title>My Bootstrap 5 - Index</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
   <!-- Custom CSS -->
   <style>
-    /* Add your custom styles here */
+    /* Custom styles for your Bootstrap website */
+
+    /* General Body Styling */
     body {
       padding-top: 60px; /* Adjust the top padding to accommodate the fixed navbar */
+      background-color: #f8f9fa; /* Light grey background */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+    }
+
+    /* Navbar Customization */
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      font-size: 1.1rem;
+      margin-right: 1rem;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 60px 0;
+    }
+
+    h2 {
+      font-weight: 700;
+      color: #343a40;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #6c757d;
+    }
+
+    /* Home Section */
+    #home {
+      text-align: center;
+      background-color: #fff;
+      padding: 60px 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* About Section */
+    #about {
+      background-color: #e9ecef;
+      padding: 60px 15px;
+      border-radius: 10px;
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #fff;
+      padding: 60px 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    address {
+      font-style: normal;
+      font-size: 1.1rem;
+      color: #495057;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -39,32 +112,95 @@
   </div>
 </nav>
 
+
+
 <!-- Home Page -->
 <section id="home" class="container mt-5">
-  <h2 class="text-center mb-4">Welcome to My Website</h2>
-  <p>I'm happy you are here</p>
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2 class="mb-4">Welcome to My Website</h2>
+      <p>I'm happy you are here. This is a place where I share my thoughts, projects, and connect with like-minded individuals.</p>
+      <p>As you can see, you saw the image of Lebron James because he is my Idol</p>
+      <img src="c:\Users\USER\Downloads\Lebron.jpg" class="img-fluid rounded mb-4" alt="Hero Image">
+      <a href="#about" class="btn btn-primary">Learn More About Me</a>
+      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </div>
 </section>
 
 <!-- About Page -->
 <section id="about" class="container mt-5">
   <h2 class="text-center mb-4">About Me</h2>
-  <p>Here is some information about me. I'm Jan Rey Viudor, 21 years of age, From BRGY DAMILAG , I Love playing basketball.</p>
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img src="path/to/your/profile-picture.jpg" class="img-fluid rounded-circle mb-4" alt="Profile Picture">
+    </div>
+    <div class="col-md-8">
+      <p>Hello! I'm Jan Rey Viudor, 21 years of age, from BRGY DAMILAG. I love playing basketball.</p>
+      <h3>Skills and Expertise</h3>
+      <ul>
+        <li>Machine learning</li>
+        <li>Python</li>
+        <li>Project Management</li>
+        <li>Data Analysis</li>
+        <!-- Add more skills -->
+      </ul>
+      <h3>Hobbies and Interests</h3>
+      <p>In my free time, I enjoy playing basketball, exploring new technologies, and spending time with friends and family.</p>
+      <a href="path/to/your/resume.pdf" class="btn btn-primary">Download My Resume</a>
+    </div>
+  </div>
 </section>
+
 
 <!-- Contact Page -->
 <section id="contact" class="container mt-5">
   <h2 class="text-center mb-4">Contact Me</h2>
-  <p>You can contact me at the address below:</p>
-  <p>My Email: janreyviudor0817@gmail.com</p>
-  <p>My phone no: +639656738179</p>
-  <P>My Social Media: https://www.facebook.com/janrey.viudor, https://www.instagram.com/whois.janrii/</P>
-
-  
-  
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Get in Touch</h3>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <h3>Contact Information</h3>
+      <p><strong>Email:</strong> janreyviudor0817@gmail.com</p>
+      <p><strong>Phone:</strong> +639656738179</p>
+      <p><strong>Social Media:</strong> 
+        <a href="https://www.facebook.com/janrey.viudor">Facebook</a>, 
+        <a href="https://www.instagram.com/whois.janrii/">Instagram</a>
+      </p>
+      <h3>Location</h3>
+      <p>BRGY DAMILAG</p>
+      <!-- Google Map Embed -->
+      <iframe src="https://www.google.com/maps/place/Damilag,+Laturan,+Manolo+Fortich,+Bukidnon/@8.353364,124.8136726,18.5z/data=!4m15!1m8!3m7!1s0x32ff96f6e1272b01:0x36920cfef2807d4f!2sDamilag,+Laturan,+Manolo+Fortich,+Bukidnon!3b1!8m2!3d8.353169!4d124.814301!16s%2Fg%2F11h0pwz_5!3m5!1s0x32ff96f6e1272b01:0x36920cfef2807d4f!8m2!3d8.353169!4d124.814301!16s%2Fg%2F11h0pwz_5?entry=ttu" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
 </section>
+
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2024 My Website. All Rights Reserved.</p>
+  </div>
+</footer>
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
